@@ -2,14 +2,12 @@
 Here you can find differents **examples of IT languages (WebLanguages) and how i structure them (MVC)**
 ## **WORK ONGOING**
 ## **Release date:**
-1. HTML/CSS  
-    - 31  |May       |2019
-2. JS        
+1. HTML/CSS/JS        
     - 30  |June      |2019
-3. PHP/MySQL 
+2. PHP/MySQL 
     - 31  |July      |2019
-4. Symfony4  
+3. Symfony4  
     - 31  |August    |2019
-5. ReactJs   
+4. ReactJs   
     - 30  |September |2019
 

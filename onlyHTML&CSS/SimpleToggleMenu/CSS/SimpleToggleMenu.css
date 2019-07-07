@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Varela);
+
+body {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background:
+    linear-gradient(
+      #1E90FF 0%,
+      #87CEFA 50%,
+      #F08080 50%,
+      #FF0000 100%
+    );
+	font-family: Varela;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.box {
+	position: relative;
+ 	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	padding: 20px;
+	transition: 0.5s ;
+	border-radius: 5px;
+	box-shadow:  3px black;
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+	width: 0;
+	display: flex;
+	justify-content: space-between;
+	transition: 0.5s ;
+	overflow: hidden;
+	
+}
+
+input:checked ~ .menu {
+	width: 450px;
+}
+
+label {
+	width: 40px;
+	height: 40px;
+	background: url("../Images/listMenu.png");
+	background-size: cover;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+input:checked ~ label {
+	background: url("../Images/cross.png");
+	background-size: cover;
+}
+
+.menu li {
+	list-style-type: none;
+	margin: 0 10px;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: grey;
+	transition: 0.5s
+}
+
+.menu li a:hover {
+	color: blue;
+}
+
+input{
+    display: none;
+}
+
+
+
+
+

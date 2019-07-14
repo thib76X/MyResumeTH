@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Varela);
+
+body {
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	font-family: Varela;
+	overflow: hidden;
+}
+
+.destroyer {
+	font-size: 20px;
+	letter-spacing: 4px;
+	margin: 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+span {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../Images/thanos.gif);
+	background-size: cover;
+}
+
+.box {
+	position: relative;
+	text-align: center;
+	height: 400px;
+	width: 600px;
+}
+
+
+.destroyed {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transform-origin: left;
+	transition: all ease-in-out 4s;
+}
+
+.box:hover .destroyed {
+	transform: translateX(50px);
+	transition-delay: 1s;
+	opacity: 0;
+	filter: blur(10px);
+}
+
+.blured {
+	width: 1600px;
+	height: 400px;
+	transform: translateX(650px) scaleX(0);
+	transform-origin: left;
+	opacity: 0;
+}
+
+.box:hover .blured {
+	transition: 8s;
+	transform: translateX(-650px) scaleX(1);
+	opacity: 1;
+}

@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Varela);
+
+*{
+scroll-behavior: smooth;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template: 15% 1fr / 1fr;
+	font-family: Varela;
+	background: 
+	linear-gradient(
+		#004766 0%,
+		#335666 15%,
+		#335666 15%,
+		#666666 100%
+	);
+}
+
+header {
+	grid-area: 1 / 1 / span 1 / span 1; 
+	font-size: 40px;
+	font-weight: bold;
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 4px;
+	color: white;
+}
+
+section {
+	grid-area: 2 / 1 / span 1 / span 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.content{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+}
+
+.slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.slide {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+img {
+	object-fit: cover;
+}
+
+ul {
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	/*flex-direction: row-reverse;*/
+	list-style: none;
+}
+
+li{
+	position: relative;
+}
+
+a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: #666666;
+	border-radius: 50%; 
+	opacity: 0.5;
+	transition: opacity 0.5s;
+	text-decoration: none;
+	color: white;
+	font-size:10;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.trait {
+	position: absolute;
+	top: 50%;
+	right: 200%;
+	width: 50px;
+	height: 5px;
+	background-color: #666666;
+	opacity: 0.5;
+	transition: all ease-in-out 1s; 
+}
+
+#first:hover {
+	opacity: 1;
+	background-color: #660000;
+}
+
+
+#second:hover {
+	opacity: 1;
+	background-color: #660000;
+	box-shadow: 4px black;
+}
+
+#second:hover + #traitA {
+	opacity: 1;
+	background-color: #660000;
+}
+
+#third:hover {
+	opacity: 1;
+	background-color: #660000;
+}
+
+#third:hover + #traitB, #third:hover + #traitA {
+	opacity: 1;
+	background-color: #660000;
+}

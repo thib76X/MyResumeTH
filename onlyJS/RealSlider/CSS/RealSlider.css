@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Varela);
+
+* {
+	scroll-behavior: smooth;
+}
+
+/*:focus{
+	outline: none;
+}*/
+
+body {
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template: 10% 1fr 10% / 1fr;
+	height: 100vh;
+	font-family: Varela;
+	font-weight: bold;
+	font-size: 24px;
+	background: lightgrey;
+}
+
+header, footer {
+	letter-spacing: 4px;
+}
+
+header {
+	grid-area: 1 / 1 / span 1 / span 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+section {
+	grid-area: 2 / 1 / span 1 / span 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	text-align: center;
+	background-color: black;
+	border-radius: 50%;
+	opacity: 0.5;
+  	width: 30px;
+  	height: 30px;
+}
+
+:focus, a:hover {
+	color: black;
+	background-color: white;
+	outline: none;
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	list-style: none;
+	flex-wrap: wrap;
+	padding: 0;
+	width: 400px;
+}
+
+li {
+	position: relative;
+}
+
+.box {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+}
+
+.slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.slide {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+img {
+	object-fit: cover;
+}
+
+.trait {
+	position: absolute;
+	display: block;
+	height: 5px;
+	width: 30px;
+	background-color: black;
+	opacity: 0.5;
+	top: 50%;
+	left: 200%;
+}
+
+footer {
+	grid-area: 3 / 1 / span 1 / span 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+}

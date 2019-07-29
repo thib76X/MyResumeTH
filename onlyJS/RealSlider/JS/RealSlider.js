@@ -1,13 +1,12 @@
-var allLink		 = document.getElementsByTagName("A");
+const allLink = document.getElementsByTagName("A");
 
 document.getElementById("1").style.opacity 	= "1";
 
 function bringColor(name) {
 	document.getElementById(name).style.transition 	= "all 0.5s ease-in-out";
 	document.getElementById(name).style.opacity 	= "1";
-	var  e = parseInt(name, 10);
-	console.log(e);
-	for (var i = parseInt(name, 10)-1; i != 0; i--) {
+	let  e = parseInt(name, 10);
+	for (let i = parseInt(name, 10)-1; i != 0; i--) {
 		try{
 		document.getElementById(i).style.transition 			= "all 0.5s ease-in-out";
 		document.getElementById(i).style.opacity 				= "1";

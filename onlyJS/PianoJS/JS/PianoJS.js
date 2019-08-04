@@ -1,15 +1,15 @@
 const firstDo 	= document.getElementById('firstDo');
 const doSharp 	= document.getElementById('doSharp');
-const re 		= document.getElementById('re');
+const re 	= document.getElementById('re');
 const reSharp 	= document.getElementById('reSharp');
-const mi 		= document.getElementById('mi');
-const fa 		= document.getElementById('fa');
+const mi 	= document.getElementById('mi');
+const fa 	= document.getElementById('fa');
 const faSharp 	= document.getElementById('faSharp');
-const sol 		= document.getElementById('sol');
+const sol 	= document.getElementById('sol');
 const solSharp 	= document.getElementById('solSharp');
-const la 		= document.getElementById('la');
+const la 	= document.getElementById('la');
 const laSharp 	= document.getElementById('laSharp');
-const si 		= document.getElementById('si');
+const si 	= document.getElementById('si');
 const secondDo 	= document.getElementById('secondDo');
 
 function touchKey(keyPressed){
@@ -61,14 +61,14 @@ function touchKey(keyPressed){
 };
 
 function makeSong(getId){
-		getId.style.transition 			= "all 0.2s ease-in-out";
+		getId.style.transition 		= "all 0.2s ease-in-out";
 		getId.style.backgroundColor 	= "red";
 
 		const originalColor = function(){
 			return (getId.id.includes('Sharp') ? 'black' : 'white');
 		};
 		
-		setTimeout(()=>{getId.style.backgroundColor 	= originalColor()}, 100);
+		setTimeout(()=>{getId.style.backgroundColor = originalColor()}, 100);
 		const idName = getId.id;
 		playNote(idName);
 };

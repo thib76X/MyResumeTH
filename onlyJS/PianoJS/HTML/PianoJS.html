@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PianoJS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/PianoJS.css">
+	<link rel="icon" href="../Images/piano.ico" />
+	<script type="text/javascript" src="../JS/PianoJS.js" defer></script>
+</head>
+<body>
+	<div class="article">
+		You can play by clicking on the different tiles or you can play with your keyBoard (i got a french keyboard). You can get a temporary record of what you have played and listen it immediately. Here is a list of the associated key.
+		<p>
+			<ul>
+				<li>Q &#x21D3; Do	</li>
+				<li>Z &#x21D3; Do#  </li>
+				<li>S &#x21D3; Re	</li>
+				<li>E &#x21D3; Re#  </li>
+				<li>D &#x21D3; Mi	</li>
+				<li>F &#x21D3; Fa	</li>
+				<li>T &#x21D3; Fa#  </li>
+				<li>G &#x21D3; Sol	</li>
+				<li>Y &#x21D3; Sol# </li>
+				<li>H &#x21D3; La	</li>
+				<li>U &#x21D3; La#  </li>
+				<li>J &#x21D3; Si	</li>
+				<li>K &#x21D3; Do	</li>
+			</ul>
+		</p>
+	</div>
+	<div class="wrapper">
+		<div class="white text" id="firstDo"> Do   </div>
+		<div class="black text" id="doSharp"> Do#  </div>
+		<div class="white text" id="re">	  Re   </div>
+		<div class="black text" id="reSharp"> Re#  </div>
+		<div class="white text" id="mi">	  Mi   </div>
+		<div class="white text" id="fa">	  Fa   </div>
+		<div class="black text" id="faSharp"> Fa#  </div>
+		<div class="white text" id="sol">	  Sol  </div>
+		<div class="black text" id="solSharp">Sol# </div>
+		<div class="white text" id="la">	  La   </div>
+		<div class="black text" id="laSharp"> La#  </div>
+		<div class="white text" id="si">	  Si   </div>
+		<div class="white text" id="secondDo">Do   </div>
+	</div>
+	<div class="control">
+		<input type="button" onclick="recorder()"  class="record">
+		<input type="button" onclick="stopRecorder()"  class="stop" disabled> 
+	</div>
+	
+</body>
+</html>

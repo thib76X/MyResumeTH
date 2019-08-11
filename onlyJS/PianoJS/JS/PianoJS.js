@@ -1,15 +1,15 @@
 const firstDo 	= document.getElementById('firstDo');
 const doSharp 	= document.getElementById('doSharp');
-const re 	= document.getElementById('re');
+const re 		= document.getElementById('re');
 const reSharp 	= document.getElementById('reSharp');
-const mi 	= document.getElementById('mi');
-const fa 	= document.getElementById('fa');
+const mi 		= document.getElementById('mi');
+const fa 		= document.getElementById('fa');
 const faSharp 	= document.getElementById('faSharp');
-const sol 	= document.getElementById('sol');
+const sol 		= document.getElementById('sol');
 const solSharp 	= document.getElementById('solSharp');
-const la 	= document.getElementById('la');
+const la 		= document.getElementById('la');
 const laSharp 	= document.getElementById('laSharp');
-const si 	= document.getElementById('si');
+const si 		= document.getElementById('si');
 const secondDo 	= document.getElementById('secondDo');
 
 function touchKey(keyPressed){
@@ -61,14 +61,14 @@ function touchKey(keyPressed){
 };
 
 function makeSong(getId){
-		getId.style.transition 		= "all 0.2s ease-in-out";
+		getId.style.transition 			= "all 0.2s ease-in-out";
 		getId.style.backgroundColor 	= "red";
 
 		const originalColor = function(){
 			return (getId.id.includes('Sharp') ? 'black' : 'white');
 		};
 		
-		setTimeout(()=>{getId.style.backgroundColor = originalColor()}, 100);
+		setTimeout(()=>{getId.style.backgroundColor 	= originalColor()}, 100);
 		const idName = getId.id;
 		playNote(idName);
 };
@@ -84,25 +84,39 @@ function recorder(){
 	document.getElementsByClassName('stop')[0].disabled = false;
 	document.getElementsByClassName('record')[0].style.border = 'solid red 2px';
 
+//open the stream and get promise
 	navigator.mediaDevices.getUserMedia({ audio: true })
   		.then(stream => {
-	    var mediaRecorder = new MediaRecorder(stream);
+	    const mediaRecorder = new MediaRecorder(stream);
 	    mediaRecorder.start();
-	    
-	    var audioChunks = [];
+
+//when .stop, event dataavailable is fire and data goes into audioChunks
+	    const audioChunks = [];
     	mediaRecorder.addEventListener("dataavailable", event => {
       	audioChunks.push(event.data);
     });
 
+//now i got the data, i have to know how to use them
+//i create Binary Large Object(Blob)
+//when .stop, event stop is fired
 	 mediaRecorder.addEventListener("stop", () => {
-      var audioBlob = new Blob(audioChunks);
-      var audioUrl = URL.createObjectURL(audioBlob);
-      var audio = new Audio(audioUrl);
+      const audioBlob = new Blob(audioChunks);
+      const audioUrl = URL.createObjectURL(audioBlob);
+      const audio = new Audio(audioUrl);
       audio.play();
+      document.getElementsByTagName("A")[0].setAttribute("href", audioUrl);
+      document.getElementsByTagName("A")[0].setAttribute("download", 'audio.mp4');
+      document.getElementsByTagName("A")[0].style.opacity = '1';
     });
 
 	 document.getElementsByClassName('stop')[0].addEventListener("click",() => {
-      mediaRecorder.stop();
+	 	if (mediaRecorder['state'] == 'recording') {
+	 		mediaRecorder.stop();
+	 	}
+	 	else{
+	 		console.log('state changed');
+	 	}
+
     });
   });
 };

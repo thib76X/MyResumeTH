@@ -90,13 +90,20 @@ opacity: 0.5;
 	left: 420px;
 }
 
+.control {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 600px;
+	padding: 5px;
+}
+
 .record {
 	background: url('../Images/record.png') no-repeat;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	background-position: center;
-	margin-top: 5px; 
 	cursor: pointer;
 }
 
@@ -106,6 +113,10 @@ opacity: 0.5;
 	height: 40px;
 	border-radius: 50%;
 	background-position: center;
-	margin-top: 5px;
+	opacity: 0.3;
+}
+
+a {
+	color: purple;
 	opacity: 0.3;
 }

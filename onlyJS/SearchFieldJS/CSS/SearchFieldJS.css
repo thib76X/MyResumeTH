@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Varela);
+
+/***
+TABLE OF CONTENTS
+I) BODY
+II)SEARCHBAR
+III)DISPLAYRESULT
+***/
+
+/* 
+I
+*/
+
+body {
+	padding:0px;
+	margin: 0px;
+	min-height: 100vh;
+	display: grid;
+	grid-template: 20% 1fr / 1fr;
+	font-family: 'Varela';
+}
+
+/* 
+II
+*/
+
+.searchBar {
+	grid-area: 1 / 1 / span 1 / span 1;
+	display: flex; 
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: grey;
+}
+
+input, select {
+	font-family: 'Varela';
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.searchBar > .searchField {
+	border: solid;
+	width: 400px;
+	height: 40px;
+	border-radius: 30px;
+	padding-left: 5px;
+	background-color: white; 
+	transition: background ease-in-out 0.2s;
+}
+
+.searchBar > .searchField:focus {
+	background-color: black;
+	outline: none;
+	color: white;
+}
+
+select {
+	background: lightgrey;
+	border: solid;
+	color: white;
+	height: 40px;
+}
+
+select:focus {
+	background-color: lightblue;
+	outline: none;
+	color: white;
+}
+
+option {
+	color: white;
+	font-family: 'Varela';
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: center;
+	background-color: black;
+}
+
+/* 
+III
+*/
+
+.displayResult {
+	grid-area: 2 / 1 / span 1 / span 1;
+	display: flex; 
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: lightgrey;
+}
+
+table {
+	width: 600px;
+	letter-spacing: 3px;
+	font-weight: bold;
+ 	border-collapse: collapse;
+}
+
+table, th, td {
+  border: 3px solid black;
+}
+
+thead {
+	background-color: white;
+}
+
+tbody {
+	color: white;
+}
+
+tbody > tr> td {
+	width: 200px;
+	text-align: center;
+}

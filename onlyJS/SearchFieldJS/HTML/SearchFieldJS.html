@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SearchFieldJS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/SearchFieldJS.css">
+	<link rel="icon" href="../Images/search.ico" />
+	<script type="text/javascript" src="../JS/SearchFieldJS.js" defer></script>
+</head>
+<body>
+	<section class="searchBar">
+		<input type="text" name="search" class="searchField" placeholder="searchField" onkeyup="filterAll()">	
+		<div>
+			Sort by 
+			<select class="sorter" onchange="sortBy(this.value)">
+				<option value="1">NAME</option>
+				<option value="2">HEIGHT</option>
+				<option value="3">HAIR</option>
+			</select>
+		</div>
+	</section>
+	<section class="displayResult">
+		<table>
+			<thead>
+				<tr>
+					<th colspan="3">STAR WARS CHARACTERS (API)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>NAME</td>
+					<td>HEIGHT</td>
+					<td>HAIR-COLOR</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+</body>
+</html>

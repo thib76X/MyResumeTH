@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock, Paper, Scissors</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/RockPaperScissors.css">
+	<script type="text/javascript" src="../JS/RockPaperScissors.js" defer></script>
+	<link rel="icon" href="../Images/RockPaperScissor.ico" />
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>Rock, Paper, Scissors</header>
+	<section class="ChoiceWrapper">
+		<div class="Score">
+			<div class="MyScore">0</div>
+			<div>:</div>
+			<div class="ComputerScore">0</div>
+		</div>
+		<article>Make your Choice</article>
+		<div class="Choice">
+			<input type="button" id='0' onclick="clickIcon(this.id)"  class="Rock">
+			<input type="button" id='1' onclick="clickIcon(this.id)" class="Paper">
+			<input type="button" id='2' onclick="clickIcon(this.id)"  class="Scissor">
+		</div>
+		<div class="SnackBar">cc</div>
+	</section>
+	<section class="AnimationWrapper">
+		<div class="MySide">
+			<div>My Side</div>
+			<div class="InsideMySide"></div>
+		</div>
+		<div class="ComputerSide">
+			<div>Computer Side</div>
+			<div class="InsideComputerSide"></div>
+		</div>
+	</section>
+</body>
+</html>

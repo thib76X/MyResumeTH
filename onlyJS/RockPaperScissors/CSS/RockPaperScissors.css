@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css?family=Varela);
+
+/***
+TABLE OF CONTENTS
+I) 		HEADER
+II) 	CHOICE MAKER
+III) 	ANIMATION
+***/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	min-height: 100vh;
+	background-color: grey;
+	font-family: 'Varela';
+	display: grid;
+	grid-template: 15% 25% 1fr / 1fr;
+	color: white;
+	font-weight: bold;
+}
+
+/***
+I) II) III)
+***/
+header, .ChoiceWrapper, .AnimationWrapper {
+	display: flex;
+}
+
+/***
+I)
+***/
+header {
+	grid-area: 1 / 1 / span 1 / span 1;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+}
+
+/***
+II)
+***/
+.ChoiceWrapper {
+	grid-area: 2 / 1 / span 1 / span 1;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 24px;
+}
+
+.Score {
+	width: 100px;
+	border: solid 3px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.Choice {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 600px;
+}
+
+.Rock {
+	background: url('../Images/rock1.png') no-repeat;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background-position: center;
+	cursor: pointer;
+}
+
+.Paper {
+	background: url('../Images/paper1.jpg') no-repeat;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background-position: center;
+	cursor: pointer;
+}
+
+.Scissor {
+	background: url('../Images/scissor1.jpg') no-repeat;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background-position: center;
+	cursor: pointer;
+}
+
+.SnackBar {
+	position: absolute;
+	background-color: lightblue;
+	border: solid 2px white;
+	width: 300px;
+	z-index: 999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 50px;
+	border-radius: 30px;
+	visibility: hidden;
+	
+}
+
+.SnackBar.show {
+  visibility: visible;
+}
+
+/***
+III)
+***/
+.AnimationWrapper {
+	grid-area: 3 / 1 / span 1 / span 1;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.MySide, .ComputerSide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.InsideMySide {
+	background: url('../Images/question1.jpg') no-repeat;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-position: center;
+	border: solid lightblue;
+}
+
+.InsideComputerSide {
+	background: url('../Images/question1.jpg') no-repeat;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-position: center;
+	border: solid lightblue;
+}
+
+

@@ -3,6 +3,7 @@ Here you can find differents examples of IT languages (WebLanguages) and how i s
 ## **WORK ONGOING**
 ## **Release date:**
 The works will be released weekly (every sunday) and begin the 1rst July.
+Holydays: AUGUST-SEPTEMBER 28th 2019
 
 PS:
 List of my source:

@@ -4,6 +4,7 @@ Here you can find differents examples of IT languages (WebLanguages) and how i s
 ## **Release date:**
 The works will be released every two weeks (sunday) and begin the 1rst July, sometimes i'll release it during the week if i got inpiration XD.
 Holydays: AUGUST-SEPTEMBER 28th 2019
+Family Event, so any release: 27 October 2019
 
 PS:
 List of my source:

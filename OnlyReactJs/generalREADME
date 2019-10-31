@@ -38,3 +38,5 @@ Architecture of react project general:
     
 I PUT SOME index to make cleaner my import.
 I often create a template for my view.
+I often didn't put prop type because I didn't take time to put it but if I work seriously on something, I will proptype them XD
+

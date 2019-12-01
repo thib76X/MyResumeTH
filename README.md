@@ -3,6 +3,10 @@ Here you can find differents examples of IT languages (WebLanguages) and how i s
 
 You may find interesting README in different folder. Nevertheless, some README are empty but you will recognize because generally their name are "file" 
 
+# DESIGN AND ARCHITECTURE PATTERN
+https://refactoring.guru/design-patterns
+a link to interesting pattern well-known
+
 # SUBJECT KNOWN in JS:
 - promise
 - prototype and pseudo class
@@ -32,10 +36,6 @@ You may find interesting README in different folder. Nevertheless, some README a
 
 
 ## **WORK ONGOING**
-## **Release date:**
-The works will be released every two weeks (sunday) and begin the 1rst July, sometimes i'll release it during the week if i got inpiration XD.
-Holydays: AUGUST-SEPTEMBER 28th 2019
-Family Event, so any release: 27 October 2019
 
 PS:
 List of my source:

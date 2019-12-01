@@ -5,7 +5,7 @@ You may find interesting README in different folder. Nevertheless, some README a
 
 # DESIGN AND ARCHITECTURE PATTERN
 https://refactoring.guru/design-patterns
-a link to interesting pattern well-known
+a link to interesting pattern (well-known)
 
 # SUBJECT KNOWN in JS:
 - promise

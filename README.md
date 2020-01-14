@@ -1,6 +1,10 @@
 # MyResumeTH
 Here you can find differents examples of IT languages (WebLanguages) and how i structure them (folder structure in REACT, css, php, etc...). I did not put the extension (CSS) for other navigator than Chrome. So please open them in Chrome.**
 
+PS: 
+I don't put everything on github.
+JS projects are old one.
+
 You may find interesting README in different folder. Nevertheless, some README are empty but you will recognize because generally their name are "file" 
 
 # DESIGN AND ARCHITECTURE PATTERN

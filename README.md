@@ -7,6 +7,10 @@ You may find interesting README in different folder. Nevertheless, some README a
 https://refactoring.guru/design-patterns
 a link to interesting pattern (well-known)
 
+# DATABASE CONCEPTION
+http://databaseanswers.org/data_models/index.htm
+a link to learn general database
+
 # SUBJECT KNOWN in JS:
 - promise
 - prototype and pseudo class

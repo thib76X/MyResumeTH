@@ -3,7 +3,7 @@ Here you can find differents examples of IT languages (WebLanguages) and how i s
 
 PS: 
 I don't put everything on github.
-JS projects are old one.
+pure JS projects are old one.
 
 You may find interesting README in different folder. Nevertheless, some README are empty but you will recognize because generally their name are "file" 
 

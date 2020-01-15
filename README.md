@@ -1,21 +1,20 @@
 # MyResumeTH
-Here you can find differents examples of IT languages (WebLanguages) and how i structure them (folder structure in REACT, css, php, etc...). I did not put the extension (CSS) for other navigator than Chrome. So please open them in Chrome.**
+Here you can find different examples of IT languages (WebLanguages) and how I structure them (folder structure in REACT, CSS, PHP, etc). I did not put the extension (CSS) for navigators other than Chrome. So please open them in Chrome.**
 
 PS: 
-I don't put everything on github.
-pure JS projects are old one.
+I don't put everything on GitHub; pure JS projects are old ones.
 
-You may find interesting README in different folder. Nevertheless, some README are empty but you will recognize because generally their name are "file" 
+You may find interesting READMEs in different folders. Nevertheless, some READMEs are empty but you will recognize them because generally their names are "file". 
 
 # DESIGN AND ARCHITECTURE PATTERN
 https://refactoring.guru/design-patterns
-a link to interesting pattern (well-known)
+a link to interesting patterns (well-known)
 
 # DATABASE CONCEPTION
 http://databaseanswers.org/data_models/index.htm
-a link to learn general database
+a link to general learning database
 
-# SUBJECT KNOWN in JS:
+# SUBJECTS KNOWN in JS:
 - promise
 - prototype and pseudo class
 - closure
@@ -26,17 +25,17 @@ a link to learn general database
 - apply/bind/call
 - decorator
 - class/extends
-- etc ...
+- etc 
 
-# SUBJECT KNOWN IN CSS:
+# SUBJECTS KNOWN IN CSS:
 - animation
 - grid
 - display of different component
 
 # SUBJECT KNOWN IN HTML:
-- use different tag to make code more meaningfull (not only div)
+- use different tags to make code more meaningful (not only div)
 
-# SUBJECT KNOWN IN PHP:
+# SUBJECTS KNOWN IN PHP:
 - more to come
 
 # SUBJECT KNOWN IN SQL:

@@ -14,6 +14,15 @@ a link to interesting patterns (well-known)
 http://databaseanswers.org/data_models/index.htm
 a link to general learning database
 
+# TIME COMPLEXITY AND SPACE COMPLEXITY
+- Big O Notation (usual function)
+- Big Ω Notation (usual function)
+- Big Θ Notation (usual function)
+
+# DYNAMIC PROGRAMMING
+- Top Down : Memoization
+- Bottom Up : Tabulation
+
 # SUBJECTS KNOWN in JS:
 - promise
 - prototype and pseudo class
